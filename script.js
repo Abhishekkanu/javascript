@@ -75,15 +75,51 @@ console.log(person)
 
 
 
-function myfunction()
-{
-    document.getElementById("demo").innerHTML=person.getinfo();
+// function myfunction()
+// {
+//     document.getElementById("demo").innerHTML=person.getinfo();
+// }
+// var person={
+//     firstname:"john",
+//     lastname:"Doe",
+//     id:5566,
+//     getinfo:function(){
+//         return this.firstname + " " + this.lastname;
+//     }
+// };
+
+
+
+
+// 13-12-2024
+var person2=new Object();
+person2.name='abhi';
+person2.age=22;
+person2.ismarried=true;
+person2.address=[];
+person2.address.street="nagar";
+person2["address"]["flatno"]=33;
+
+//showing in console
+console.log(person2);
+
+//printing in the document
+document.write(person2)
+document.write("<br>");
+document.write(person2["ismarried"])
+document.write("<br>");
+
+
+
+//JAVA SCRIPT SCOPE
+function show(){
+    var a="a is local outer variable";
+    document.write(a+"<br>");
 }
-var person={
-    firstname:"john",
-    lastname:"Doe",
-    id:5566,
-    getinfo:function(){
-        return this.firstname + " " + this.lastname;
-    }
-};
+
+function disc(){
+    var b="b is local inner variable";
+    document.write(b+"<br>");
+}
+disc();
+show();
