@@ -128,7 +128,7 @@ show();
 
 
 
-
+/*
 // 16-12-2024
 var a=10;
 function functiona() {
@@ -255,3 +255,42 @@ function add(a,b){
     document.write(a+b);
 }
 add(10,20);
+*/
+
+
+
+// 23-12-2024
+var res =mul(12,30);
+function mul(x,y){
+    return x*y;
+}
+document.write(res);
+
+
+//ARROW FUNCTION
+function add(a,b){
+    console.log (a+b);
+}
+add(10,20);
+var add2=(a,b)=>{
+    console.log(a+b);
+};
+add2(102,20);
+
+var add3=(a,b)=>console.log(a+b);
+add3(30,20);
+
+
+//adding string and number
+function myfunctionadd(){
+    var x=3+3;
+    var y="3"+3;
+    var z="hello"+3;
+    var demoP=document.getElementById("demo");
+    demoP.innerHTML= "5+5="+x+"<br>"+"5+5="+y+"<br>+5+5="+z;
+}
+
+
+//array is js
+var mycollection=[1,"meera maam",true,{name:"john",age:34},function(name){console.log(name);},["abhishek","bachhan","amitabh","bachhan"]];
+console.log(mycollection);
