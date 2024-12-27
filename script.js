@@ -259,6 +259,8 @@ add(10,20);
 
 
 
+
+/*
 // 23-12-2024
 var res =mul(12,30);
 function mul(x,y){
@@ -290,7 +292,98 @@ function myfunctionadd(){
     demoP.innerHTML= "5+5="+x+"<br>"+"5+5="+y+"<br>+5+5="+z;
 }
 
-
 //array is js
 var mycollection=[1,"meera maam",true,{name:"john",age:34},function(name){console.log(name);},["abhishek","bachhan","amitabh","bachhan"]];
 console.log(mycollection);
+*/
+
+
+
+// 27-12-2024
+/*
+function information(firstname, lastname, language){
+    if(arguments.length===3){
+        console.log(firstname);
+        console.log(lastname);
+        console.log(language);
+    }
+}
+information();
+information('jitendra','abhi','vivek');
+
+
+function sayhello(){
+    alert("hello world")
+}
+
+
+
+function over(){
+    document.getElementById('mytext').style.color = "red";
+}
+function mount(){
+    document.getElementById('mytext').style.color = "magenta";
+}
+
+
+//CONFORMATION DIALOG BOX
+var retval=confirm("do you want to continue?");if(retval==true){
+    alert("user want to continue!");
+}else{
+    alert("user doesnot want to continue!");
+}
+
+
+// promt dialog box
+var retval = prompt("enter your name:","your name here");
+alert("you have entered : " + retval);
+
+var name=prompt("enter your Name","Name");
+document.write("<h2>Hello"+ name+"</h2>");
+*/
+
+
+/*
+//QUIZ
+var question="what is 10+10";
+var answer=20;
+var correct='<img src="right.jpg" height="150" width="250">';
+var incorrect='<img src="wrong1.jpg" height="150" width="250">';
+var response=prompt(question,"0");
+for(count=0;count<3;count++){
+    if(response!=answer)
+    {
+        confirm("wrong, press OK for another chance");
+        response=prompt(question,"0");
+        if(count==1)
+        {
+           alert("better luck next time");
+        }
+    }
+    else{
+        alert("great!! you are right");
+        count=2;
+    }
+}
+var output=(response==answer)?correct:incorrect;
+document.write("</br>")
+document.write(output);
+*/
+
+//redirect to other link
+function redirect(){
+    window.location="https://www.facebook.com";
+}
+document.write("You will be redirected to main page in 10 sec.");
+setTimeout('redirect()',10000);
+
+//input text validation
+function validationform()
+{
+    var x=document.forms["myform"]["fname"].value;
+    if(x==null || x=="")
+    {
+        alert("first name must be filled out");
+        return false;
+    }
+}

@@ -14,7 +14,7 @@
     <p id="demo"></p> -->
 
     
-    <p>set the variable to different value and then try. </p>
+    <!-- <p>set the variable to different value and then try. </p>
 
     <button onclick="myfunction()">Try it</button>
 
@@ -26,7 +26,37 @@
     
     <p>click the following button to add number and string.</p>
     <button onclick="myfunctionadd()">try it</button>
-    <p id="demo"></p>
+    <p id="demo"></p> -->
+
+
+
+    <body onload="alert('welcome')"></body>
+
+    <p>click the following button and see result</p>
+    <form>
+        <input type="button" onclick="sayhello()" value="say hello">
+        <!-- //page printing -->
+        <input type="button" value="print" onclick="window.print()">
+    </form>
+
+    <h2 id="mytext" onmouseover="over()" onmouseout="mount()">HELLO WORLD</h2>
+
+    <form name="addressform">
+        Name: <input name="yourname"> <br/>
+        phone: <input name="phone"> <br/>
+        Email: <input name="email"> <br/>
+    </form>
+
+    <form name="myform" action="demo_form.asp" onsubmit="return validationform()" method="post">
+        firstname:<input type="text" name="fname">
+        <input type="submit" value="submit">
+    </form>
+
+
+
+
+
+
 
     <script src="script.js"></script>
 </body>
